@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" 
+            fx:controller="com.mycompany.jfxspringgi.MainController">
+   <stylesheets>
+       <URL value="@/styles/main.css" />
+   </stylesheets>
+   <top>
+       <AnchorPane>
+            <children>
+                <Button layoutX="126" layoutY="90" text="Main Button.Click Me!" onAction="#handleButtonAction" fx:id="button" />
+                <Label layoutX="126" layoutY="120" minHeight="16" minWidth="69" fx:id="label" />
+            </children>
+        </AnchorPane>
+   </top>
+   <center>      
+        <SplitPane dividerPositions="0.25" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" BorderPane.alignment="CENTER">
+           <items>        
+              <StackPane fx:id="mainWindow" />   
+           </items>
+        </SplitPane>     
+   </center>
+</BorderPane>
